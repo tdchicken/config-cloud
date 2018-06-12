@@ -23,3 +23,8 @@ spring:
         - Path=/user/**
         filters:
         - RewritePath=/user/(?<path>.*), /$\{path}
+        predicates:
+        - name: Betweeen
+          args:
+            datetime1: 2018-06-12T00:00:00.000+08:00[Asia/Shanghai]
+            datetime2: 2018-06-12T02:02:48.516+08:00[Asia/Shanghai]
