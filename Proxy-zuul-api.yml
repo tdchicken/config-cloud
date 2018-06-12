@@ -1,5 +1,5 @@
 server:
-  port: 8060
+  port: 8059
 
 eureka:
   client:
@@ -15,6 +15,3 @@ zuul:
     user:
       path: /user/**
       serviceId: User-service
-    order:
-      path: /order/**
-      serviceId: Order-service
