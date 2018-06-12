@@ -7,6 +7,4 @@ spring:
       server:
         git:
           uri: https://github.com/tdchicken/config-cloud/
-          username: tdchicken
-          password: khanhkhi1710
           basedir: target/config
