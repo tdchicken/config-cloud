@@ -13,6 +13,9 @@ logging:
 spring:
   cloud:
     gateway:
+      discovery:
+        locator:
+          enabled: true
       routes:
       - id: User-Service
         uri: lb://User-Service
