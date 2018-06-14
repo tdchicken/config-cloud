@@ -4,7 +4,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8061/eureka/
+      defaultZone: http://localhost:10002/eureka/
 
 logging:
   pattern: 
@@ -15,6 +15,3 @@ zuul:
     user:
       path: /user/**
       serviceId: User-service
-    product:
-      path: /product/**
-      serviceId: Product-service
