@@ -9,9 +9,11 @@ eureka:
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  
+spring:
   security:
    basic:
      enabled: true
    user:
-      name: kido
-      password: kidomicroservice
+     name: kido
+     password: kidomicroservice
