@@ -1,10 +1,10 @@
 server:
-  port: 10003
+  port: 10005
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:10002/eureka/
+      defaultZone: http://61.28.227.69:10002/eureka/
 
 logging:
   pattern: 
@@ -12,10 +12,7 @@ logging:
     
 spring:
   cloud:
-    gateway:  
-      discovery:
-        locator:
-          enabled: true
+    gateway:
       routes:
       - id: User-Service
         uri: lb://User-Service
