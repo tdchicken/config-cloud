@@ -15,4 +15,3 @@ zuul:
     user:
       path: /user/**
       serviceId: User-service
-      stripPrefix: false
