@@ -16,4 +16,11 @@ zuul:
       path: /userservice/**
       serviceId: User-service
       stripPrefix: true
-      
+    productservice:
+      path: /productservice/**
+      serviceId: Product-service
+      stripPrefix: true
+    orderservice:
+      path: /orderservice/**
+      serviceId: Order-service
+      stripPrefix: true
