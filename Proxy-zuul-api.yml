@@ -24,3 +24,11 @@ zuul:
       path: /orderservice/**
       serviceId: Order-service
       stripPrefix: true
+
+ribbon:
+  eureka:
+    enabled: false
+
+User-service:
+  ribbon:
+    listOfServers: http://localhost:33001,http://localhost:33002
